@@ -1,13 +1,16 @@
 package com.cevp.market.persistence.entity;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "clientes")
-public class cliente {
+public class Cliente {
     
     @Id
     @Column(name = "id")
@@ -27,6 +30,9 @@ public class cliente {
 
     @Column(name = "correo_electronico")
     private String correoElectronico;
+
+    @OneToMany(mappedBy = "cliente")
+    private List<Compra> compras;
 
     public String getId() {
         return this.id;
