@@ -18,7 +18,6 @@ public class Producto {
     @Column(name = "id_producto")
     private Integer idProducto;
 
-    @Column(name = "nombre")
     private String nombre;
 
     @Column(name = "id_categoria")
@@ -33,7 +32,6 @@ public class Producto {
     @Column(name = "cantidad_stock")
     private Integer cantidadStock;
 
-    @Column(name = "estado")
     private Boolean estado;
 
     @ManyToOne

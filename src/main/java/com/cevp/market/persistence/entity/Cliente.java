@@ -13,19 +13,14 @@ import javax.persistence.Table;
 public class Cliente {
     
     @Id
-    @Column(name = "id")
     private String id;
 
-    @Column(name = "nombre")
     private String nombre;
 
-    @Column(name = "apellidos")
     private String apellidos;
 
-    @Column(name = "celular")
     private Long celular;
 
-    @Column(name = "direccion")
     private String direccion;
 
     @Column(name = "correo_electronico")

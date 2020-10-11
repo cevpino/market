@@ -15,11 +15,12 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class ProductoRepository implements ProductRepository {
+
     @Autowired
     private ProductoCrudRepository productoCrudRepository;
 
     @Autowired
-    private ProductMapper mapper;
+    public ProductMapper mapper;
 
     @Override
     public List<Product> getAll() {

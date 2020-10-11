@@ -2,7 +2,6 @@ package com.cevp.market.persistence.entity;
 
 import java.math.BigDecimal;
 
-import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
@@ -16,13 +15,10 @@ public class ComprasProducto {
     @EmbeddedId
     private ComprasProductoPK id;
 
-    @Column(name = "cantidad")
     private Integer cantidad;
 
-    @Column(name = "total")
     private BigDecimal total;
 
-    @Column(name = "estado")
     private Boolean estado;
 
     @ManyToOne

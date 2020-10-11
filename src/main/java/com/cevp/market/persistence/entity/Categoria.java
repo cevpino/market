@@ -19,10 +19,8 @@ public class Categoria {
     @Column(name = "id_categoria")
     private Integer idCategoria;
 
-    @Column(name = "descripcion")
     private String descripcion;
 
-    @Column(name = "estado")
     private Boolean estado;
 
     @OneToMany(mappedBy = "categoria")
